@@ -21,7 +21,7 @@ Examples:
 |aaa		 |admin123|
 
 
-@ValidLoginTest
+@ValidLoginTest @SmokeTest
 Scenario: Login with Valid Credentials
 Given User is on the Login page
 When User is trying to login with valid credentials using "username" and "password"

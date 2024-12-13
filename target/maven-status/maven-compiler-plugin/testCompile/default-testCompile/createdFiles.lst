@@ -4,5 +4,6 @@ stepDefinitions\OrangeHRMLogin.class
 pageObjects\PageObjectManager.class
 pageObjects\OrangeHRMLoginPage.class
 cucumber\Options\TestRunner.class
+cucumber\Options\TestRunnerforFailedTestScenarios.class
 utilis\GenericUtils.class
 utilis\TestContextSetup.class
