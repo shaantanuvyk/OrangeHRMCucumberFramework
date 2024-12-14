@@ -19,6 +19,7 @@ Examples:
 |userName|password|
 |Admin	 |aaa			|
 |aaa		 |admin123|
+|bbb		 |abababa	|
 
 
 @ValidLoginTest @SmokeTest
