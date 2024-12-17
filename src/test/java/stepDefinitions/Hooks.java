@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pageObjects.PageObjectManager;
 import utilis.TestContextSetup;
@@ -23,6 +24,16 @@ public class Hooks
 	public Hooks(TestContextSetup testcontextsetup)
 	{
 		this.testcontextsetup = testcontextsetup;
+	}
+	
+	@Before("@AddUser")
+	public void beforeTest() throws IOException
+	{
+		//testcontextsetup.loginStepDefinition.user_is_trying_to_login_with_valid_credentials_using_and("Admin", "testingWITH");
+		//loginPage = 
+		testcontextsetup.pageObjectManager.getloginPage().userName(testcontextsetup.testbase.getPropties("username"));
+		testcontextsetup.pageObjectManager.getloginPage().userPassword(testcontextsetup.testbase.getPropties("password"));
+		testcontextsetup.pageObjectManager.getloginPage().loginButtonClick();
 	}
 	
 	@After
@@ -40,6 +51,5 @@ public class Hooks
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(image, new File("C:\\Users\\ACER\\Desktop\\Screenshots\\"+scenario.getName()+".jpg"));
 		}
-		
 	}
 }

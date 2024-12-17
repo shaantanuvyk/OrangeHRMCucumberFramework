@@ -1,11 +1,14 @@
 package utilis;
 
 import java.io.IOException;
+import java.sql.DriverManager;
 
 import org.openqa.selenium.WebDriver;
 
 import pageObjects.PageObjectManager;
+import stepDefinitions.AddUser;
 import stepDefinitions.Hooks;
+import stepDefinitions.OrangeHRMLogin;
 
 
 
@@ -26,10 +29,14 @@ public class TestContextSetup
 	//Global variable that is needed by different stepDefinition class
 	public String dashboardPage;
 	
+	//public OrangeHRMLogin loginStepDefinition;
+	
+	
 	//TestContext constructor
 	public TestContextSetup() throws IOException
 	{
 		testbase = new TestBase();
 		pageObjectManager = new PageObjectManager(testbase.WebDrivermanager());
+		//loginStepDefinition = new OrangeHRMLogin(driver);
 	}
 }

@@ -27,5 +27,5 @@ Scenario Outline: Create a new candidate in the system
   And The fetched records display "<FirstName>" "<MiddleName>" "<LastName>"
 
 Examples:
-|FirstName|MiddleName|LastName|
-|Shantanu|Vilas|Karambalkar|
+|FirstName|MiddleName|LastName	|
+|Veena		|Vijay		 |Hundalekar|

@@ -1,14 +1,13 @@
 package pageObjects;
 import org.openqa.selenium.WebDriver;
 
-import stepDefinitions.Hooks;
-
 
 
 public class PageObjectManager 
 {
 	//Created OrangeHRMLoginPage variable
 	public OrangeHRMLoginPage loginpage;
+	public AddUserPage adduserpage; 
 	
 	//Created local WebDriver
 	public WebDriver driver;
@@ -18,10 +17,16 @@ public class PageObjectManager
 		this.driver= driver;
 	}
 	
-	public OrangeHRMLoginPage getLloginPage()
+	public OrangeHRMLoginPage getloginPage()
 	{
 		loginpage = new OrangeHRMLoginPage(driver);
 		return loginpage;
+	}
+	
+	public AddUserPage getAddUserPage()
+	{
+		adduserpage = new AddUserPage(driver);
+		return adduserpage;
 	}
 	
 }

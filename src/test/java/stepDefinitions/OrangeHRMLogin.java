@@ -26,14 +26,14 @@ public class OrangeHRMLogin extends TestBase
 	@Given("User is on the Login page")
 	public void user_is_on_the_login_page() throws IOException 
 	{
-		loginPage = testcontextsetup.pageObjectManager.getLloginPage();
+		loginPage = testcontextsetup.pageObjectManager.getloginPage();
 		System.out.println("loginPage.loginPageText(): " +loginPage.loginPageText());
 	}
 	
 	@When("User is trying to login with blank credentials using {string} and {string}")
 	public void user_is_trying_to_login_with_blank_credentials_using_and(String username, String password) 
 	{
-		loginPage = testcontextsetup.pageObjectManager.getLloginPage();
+		loginPage = testcontextsetup.pageObjectManager.getloginPage();
 		loginPage.userName("");
 		loginPage.userPassword("");
 		loginPage.loginButtonClick();
@@ -49,7 +49,7 @@ public class OrangeHRMLogin extends TestBase
 	@When("User is trying to login with invalid credentials using {string} and {string}")
 	public void user_is_trying_to_login_with_invalid_credentials_using_and(String username, String password) 
 	{
-		loginPage = testcontextsetup.pageObjectManager.getLloginPage();
+		loginPage = testcontextsetup.pageObjectManager.getloginPage();
 		loginPage.userName(username);
 		loginPage.userPassword(password);
 		loginPage.loginButtonClick();
@@ -65,7 +65,7 @@ public class OrangeHRMLogin extends TestBase
 	@When("User is trying to login with valid credentials using {string} and {string}")
 	public void user_is_trying_to_login_with_valid_credentials_using_and(String username, String password) throws IOException 
 	{
-		loginPage = testcontextsetup.pageObjectManager.getLloginPage();
+		loginPage = testcontextsetup.pageObjectManager.getloginPage();
 		loginPage.userName(getPropties("username"));
 		loginPage.userPassword(getPropties("password"));
 		loginPage.loginButtonClick();
@@ -74,7 +74,7 @@ public class OrangeHRMLogin extends TestBase
 	@Then("User gets login successfully on {string} page")
 	public void user_gets_login_successfully_on_page(String successMessage) 
 	{
-		testcontextsetup.dashboardPage= testcontextsetup.pageObjectManager.getLloginPage().loginSuccessMessage();
+		testcontextsetup.dashboardPage= testcontextsetup.pageObjectManager.getloginPage().loginSuccessMessage();
 		assertEquals(testcontextsetup.dashboardPage, successMessage);
 	}
 }

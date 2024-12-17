@@ -3,13 +3,6 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="cucumber.Options.TestRunnerforFailedTestScenarios">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- cucumber.Options.TestRunnerforFailedTestScenarios -->
       <class name="cucumber.Options.TestRunner">
         <methods>
           <include name="setUpClass"/>
@@ -17,6 +10,13 @@
           <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- cucumber.Options.TestRunner -->
+      <class name="cucumber.Options.TestRunnerforFailedTestScenarios">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cucumber.Options.TestRunnerforFailedTestScenarios -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
