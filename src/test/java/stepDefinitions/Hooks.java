@@ -26,7 +26,7 @@ public class Hooks
 		this.testcontextsetup = testcontextsetup;
 	}
 	
-	@Before("@AddUser")
+	@Before("not @LoginTest")
 	public void beforeTest() throws IOException
 	{
 		//testcontextsetup.loginStepDefinition.user_is_trying_to_login_with_valid_credentials_using_and("Admin", "testingWITH");
@@ -36,7 +36,7 @@ public class Hooks
 		testcontextsetup.pageObjectManager.getloginPage().loginButtonClick();
 	}
 	
-	@After
+	//@After
 	public void closeBrowser() throws IOException
 	{
 		testcontextsetup.testbase.WebDrivermanager().quit();

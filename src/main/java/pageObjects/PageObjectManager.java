@@ -8,6 +8,7 @@ public class PageObjectManager
 	//Created OrangeHRMLoginPage variable
 	public OrangeHRMLoginPage loginpage;
 	public AddUserPage adduserpage; 
+	public NewCandidatePage newcandidatepage;
 	
 	//Created local WebDriver
 	public WebDriver driver;
@@ -28,5 +29,12 @@ public class PageObjectManager
 		adduserpage = new AddUserPage(driver);
 		return adduserpage;
 	}
+	
+	public NewCandidatePage getNewCandidatePage()
+	{
+		newcandidatepage = new NewCandidatePage(driver);
+		return newcandidatepage;
+	}
+	
 	
 }

@@ -28,7 +28,7 @@ public class AddUserPage
 	private By GetUsersFirstName = By.xpath("//input[@name='firstName']");
 	private By GetUsersMiddleName = By.cssSelector("input.oxd-input.oxd-input--active.orangehrm-middlename");
 	private By GetUsersLastName = By.cssSelector("input.oxd-input.oxd-input--active.orangehrm-lastname");
-	private By SaveUserDetails = By.xpath("//form[@class='oxd-form']/div[5]/button[@type='submit']");
+	private By SaveUserDetails = By.xpath("//form[@class='oxd-form']/div[4]/button[@type='submit']");
 	private By SearchByEmployeeName = By.xpath("//form[@class='oxd-form']//div[@class='oxd-grid-item oxd-grid-item--gutters'][1]//input[@placeholder='Type for hints...']");
 	
 	
@@ -121,7 +121,7 @@ public class AddUserPage
 	    Actions action= new Actions(driver);
 	    searchByEmployeename("Shantanu ");
 	    Thread.sleep(5000);
-	    action.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_UP).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+	    action.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[text()=' Search ']")).click();
 	}

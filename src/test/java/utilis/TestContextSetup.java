@@ -29,7 +29,7 @@ public class TestContextSetup
 	//Global variable that is needed by different stepDefinition class
 	public String dashboardPage;
 	
-	//public OrangeHRMLogin loginStepDefinition;
+
 	
 	
 	//TestContext constructor
@@ -37,6 +37,5 @@ public class TestContextSetup
 	{
 		testbase = new TestBase();
 		pageObjectManager = new PageObjectManager(testbase.WebDrivermanager());
-		//loginStepDefinition = new OrangeHRMLogin(driver);
 	}
 }
