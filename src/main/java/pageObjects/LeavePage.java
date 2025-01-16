@@ -79,7 +79,7 @@ public class LeavePage
 		int date=0;
 		for(int i=1; i<=countDays; i++)
 		{
-			String tempDate= days.get(i).getText();
+			String tempDate= days.get(i).getText(); 
 			date=Integer.parseInt(tempDate);
 			if(date==day)
 			{
