@@ -28,9 +28,10 @@ public class TestContextSetup
 	
 	//Global variable that is needed by different stepDefinition class
 	public String dashboardPage;
-	
-
-	
+	public String fname = "Shantanu";
+	public String mname = "Vilas";
+	public String lname = "Karambalkar";
+	public String email = "shantanu@mailinator.com";
 	
 	//TestContext constructor
 	public TestContextSetup() throws IOException

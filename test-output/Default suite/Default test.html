@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 17 14:30:37 IST 2024</td>
+<td>Started on:</td><td>Thu Jan 16 13:13:24 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>123 seconds (123658 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28774 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,73 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Valid User", "Adding a new user to the sysytem"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-7044e35a=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1398, 21). Other element would receive the click: &lt;span data-v-bdd6d943=&quot;&quot; class=&quot;oxd-userdropdown-tab&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=131.0.6778.140)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5901a43e5c28cafb938bf9ccef13ba0e, clickElement {id=f.71F21DDEEB8527F69B349A0AB8444D92.d.AAD13E3C137230C70415DB37EE9E0FDD.e.262}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\ACER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54341/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5901a43e5c28cafb938bf9ccef13ba0e)] -&gt; xpath: //button[text()=&apos; Search &apos;]]
-Session ID: 5901a43e5c28cafb938bf9ccef13ba0e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageObjects.AddUserPage.fetchName(AddUserPage.java:126)
-	at stepDefinitions.AddUser.on_searching_user_gets_fetched(AddUser.java:63)
-	at ✽.On searching user gets fetched(file:///C:/Users/ACER/OrangeHRMCucumberFramework/OrangeHRMCucumberFramework/src/test/java/features/AddUser.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace507944445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace507944445'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-7044e35a=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1398, 21). Other element would receive the click: &lt;span data-v-bdd6d943=&quot;&quot; class=&quot;oxd-userdropdown-tab&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=131.0.6778.140)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5901a43e5c28cafb938bf9ccef13ba0e, clickElement {id=f.71F21DDEEB8527F69B349A0AB8444D92.d.AAD13E3C137230C70415DB37EE9E0FDD.e.262}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\ACER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54341/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5901a43e5c28cafb938bf9ccef13ba0e)] -&gt; xpath: //button[text()=&apos; Search &apos;]]
-Session ID: 5901a43e5c28cafb938bf9ccef13ba0e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageObjects.AddUserPage.fetchName(AddUserPage.java:126)
-	at stepDefinitions.AddUser.on_searching_user_gets_fetched(AddUser.java:63)
-	at ✽.On searching user gets fetched(file:///C:/Users/ACER/OrangeHRMCucumberFramework/OrangeHRMCucumberFramework/src/test/java/features/AddUser.feature:10)
-</pre></div></td>
-<td>28</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -143,35 +76,10 @@ Session ID: 5901a43e5c28cafb938bf9ccef13ba0e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a new candidate in the system", "Creating a new candidate"</td>
+<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Employee can apply for a leave", "Verify Employee Leave feature is working when leave is applied"</td>
 <td></td>
-<td>28</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Invalid credentials", "All Login Scenarios"</td>
-<td></td>
-<td>6</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login With Blank credentials", "All Login Scenarios"</td>
-<td></td>
-<td>10</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Invalid credentials", "All Login Scenarios"</td>
-<td></td>
-<td>18</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Valid Credentials", "All Login Scenarios"</td>
-<td></td>
-<td>12</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
-<tr>
-<td title='cucumber.Options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Invalid credentials", "All Login Scenarios"</td>
-<td></td>
-<td>17</td>
-<td>cucumber.Options.TestRunner@7dfd3c81</td></tr>
+<td>27</td>
+<td>cucumber.Options.TestRunner@c96a4ea</td></tr>
 </table><p>
 </body>
 </html>

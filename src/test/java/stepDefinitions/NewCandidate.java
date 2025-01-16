@@ -18,7 +18,7 @@ public class NewCandidate
 		newcandidatepage = testcontextsetup.pageObjectManager.getNewCandidatePage();
 	}
 	
-	@Given("User navigates on {string} page")
+	@Given("User navigates on {string} page") 
 	public void user_navigates_on_page(String moduleName) 
 	{
 		testcontextsetup.pageObjectManager.getAddUserPage().menuOption(moduleName);	
@@ -28,11 +28,11 @@ public class NewCandidate
 	@When("User creates a new user in system as {string} {string} {string} {string}")
 	public void user_creates_a_new_user_in_system_as(String firstName, String middleName, String lastname, String email) throws InterruptedException 
 	{
-		this.firstname= firstName;
-		newcandidatepage.CandidateFirstName(firstName);
-		newcandidatepage.CandidateMiddleName(middleName);
-		newcandidatepage.CandidateLastName(lastname);
+		newcandidatepage.CandidateFirstName(testcontextsetup.fname);
+		newcandidatepage.CandidateMiddleName(testcontextsetup.mname);
+		newcandidatepage.CandidateLastName(testcontextsetup.lname);
 		newcandidatepage.CandidateEmail(email);
+
 		Thread.sleep(7000);
 	}
 
@@ -47,7 +47,7 @@ public class NewCandidate
 	@Then("The fetched records display {string} {string} {string}")
 	public void the_fetched_records_display(String string, String string2, String string3) throws InterruptedException 
 	{
-		newcandidatepage.SearchByCandidiateName(firstname+" ");
+		newcandidatepage.SearchByCandidiateName(testcontextsetup.fname+" ");
 		newcandidatepage.CandidateSearchResult();
 	}
 }

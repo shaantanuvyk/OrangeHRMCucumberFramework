@@ -1,7 +1,7 @@
-stepDefinitions\Hooks.class
 utilis\TestBase.class
+utilis\GenericUtils.class
+stepDefinitions\Hooks.class
 stepDefinitions\OrangeHRMLogin.class
 cucumber\Options\TestRunner.class
 cucumber\Options\TestRunnerforFailedTestScenarios.class
-utilis\GenericUtils.class
 utilis\TestContextSetup.class

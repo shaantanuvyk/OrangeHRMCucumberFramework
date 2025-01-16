@@ -9,6 +9,7 @@ public class PageObjectManager
 	public OrangeHRMLoginPage loginpage;
 	public AddUserPage adduserpage; 
 	public NewCandidatePage newcandidatepage;
+	public LeavePage leavepage;
 	
 	//Created local WebDriver
 	public WebDriver driver;
@@ -36,5 +37,10 @@ public class PageObjectManager
 		return newcandidatepage;
 	}
 	
+	public LeavePage getLeavePage()
+	{
+		leavepage = new LeavePage(driver);
+		return leavepage;
+	}
 	
 }

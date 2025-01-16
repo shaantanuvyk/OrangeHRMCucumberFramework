@@ -28,9 +28,9 @@ public class AddUserPage
 	private By GetUsersFirstName = By.xpath("//input[@name='firstName']");
 	private By GetUsersMiddleName = By.cssSelector("input.oxd-input.oxd-input--active.orangehrm-middlename");
 	private By GetUsersLastName = By.cssSelector("input.oxd-input.oxd-input--active.orangehrm-lastname");
-	private By SaveUserDetails = By.xpath("//form[@class='oxd-form']/div[4]/button[@type='submit']");
-	private By SearchByEmployeeName = By.xpath("//form[@class='oxd-form']//div[@class='oxd-grid-item oxd-grid-item--gutters'][1]//input[@placeholder='Type for hints...']");
-	
+	private By SaveUserDetails = By.xpath("//form[@class='oxd-form']/div[5]/button[@type='submit']");
+	private By SearchwithEmployeeName = By.xpath("//form[@class='oxd-form']//div[@class='oxd-grid-item oxd-grid-item--gutters'][1]//input[@placeholder='Type for hints...']");
+	private By SearchEmployeeButton = By.xpath("//button[normalize-space()='Search']");
 	
 	//PageMethods
 	
@@ -112,8 +112,9 @@ public class AddUserPage
 	
 	public void searchByEmployeename(String value)
 	{
-		WebElement searchByEmployeename = driver.findElement(SearchByEmployeeName);
+		WebElement searchByEmployeename = driver.findElement(SearchwithEmployeeName);
 		searchByEmployeename.sendKeys(value);
+		
 	}
 	
 	public void fetchName(String name) throws InterruptedException
@@ -126,4 +127,9 @@ public class AddUserPage
 	    driver.findElement(By.xpath("//button[text()=' Search ']")).click();
 	}
 	
+	public void empolyeesearch()
+	{
+		WebElement searchempbutton = driver.findElement(SearchEmployeeButton);
+		searchempbutton.click();
+	}
 }

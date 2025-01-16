@@ -52,7 +52,7 @@ public class TestBase
 		}
 		return driver;
 	}
-	
+	 
 	public String getPropties(String value) throws IOException
 	{
 		filereader= new FileReader(System.getProperty("user.dir")+"\\src\\test\\resource\\Global.properties");

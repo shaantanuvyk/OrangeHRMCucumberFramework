@@ -86,12 +86,12 @@ public class NewCandidatePage
 	{
 		Actions action = new Actions(driver);
 		WebElement SearchingByCandiateName = driver.findElement(candidatenametxtbox);
-		SearchingByCandiateName.sendKeys("Veena ");
+		SearchingByCandiateName.sendKeys(name);
 		Thread.sleep(5000);
 		action.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 		
 		driver.findElement(searchcandidiatebutton).click();
-	}
+	} 
 	
 	public void CandidateSearchResult()
 	{
